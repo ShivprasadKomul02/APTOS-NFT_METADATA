@@ -7,13 +7,13 @@ Steps to follow:
   
  2.To run update metadata related function run below command
  
-##For function with empty parameters
+## For function with empty parameters
  aptos move run --function-id <resource-account-address>::create_nft_with_resource_account::<function_name> --profile nft-    receiver
   
   Ex:
   aptos move run --function-id <resource-account-address>::create_nft_with_resource_account::update_description --profile nft-receiver
   
- ##For paerameterized function
+ ## For paerameterized function
   aptos move run --function-id <resource-account-address>::create_nft_with_resource_account::<function_name> --args <Type>:value --profile nft-receiver
   
   Ex:
