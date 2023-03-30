@@ -1,3 +1,22 @@
-# Mint NFT Tutorial
+# APTOS-NFT_METADATA
 
-This tutorial and example code show how to create a collection and token and then mint a token to a receiver within Aptos. For instructions, see [Mint an NFT with Aptos CLI](https://aptos.dev/guides/move-guides/mint-nft-cli/) on Aptos.dev and the code comments within the source files of each subdirectory.
+Steps to follow:
+
+1.Folllow above link to create resource account and mint nft to receiver
+  https://aptos.dev/guides/move-guides/mint-nft-cli
+  
+ 2.To run update metadata related function run below command
+ 
+##For function with empty parameters
+ aptos move run --function-id <resource-account-address>::create_nft_with_resource_account::<function_name> --profile nft-    receiver
+  
+  Ex:
+  aptos move run --function-id <resource-account-address>::create_nft_with_resource_account::update_description --profile nft-receiver
+  
+ ##For parameterized function
+  aptos move run --function-id <resource-account-address>::create_nft_with_resource_account::<function_name> --args <Type>:value --profile nft-receiver
+  
+  Ex:
+  aptos move run --function-id <resource-account-address>::create_nft_with_resource_account::update_description --args String:"New description" --profile nft-receiver
+  
+  
