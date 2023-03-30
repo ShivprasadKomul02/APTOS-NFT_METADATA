@@ -14,7 +14,7 @@ Steps to follow:
   aptos move run --function-id <resource-account-address>::create_nft_with_resource_account::update_description --profile nft-receiver
   
  ##For parameterized function
-  aptos move run --function-id <resource-account-address>::create_nft_with_resource_account::<function_name> --args <Type>:value --profile nft-receiver
+  aptos move run --function-id <resource-account-address>::create_nft_with_resource_account::<function_name> --args <ParameterType>:value --profile nft-receiver
   
   Ex:
   aptos move run --function-id <resource-account-address>::create_nft_with_resource_account::update_description --args String:"New description" --profile nft-receiver
